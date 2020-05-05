@@ -1,0 +1,146 @@
+\ProvidesPackage{preamble}
+
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{etoolbox}
+\usepackage{gensymb,graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{mathpazo} % Palatino font
+\usepackage{placeins}
+\usepackage{setspace}
+\usepackage{siunitx,subcaption}
+\usepackage{soul}
+\usepackage[table]{xcolor}
+\usepackage{tabto,tabu,tabularx}
+\usepackage[titles]{tocloft}
+\usepackage{trimclip}
+\usepackage[utf8]{inputenc}
+\usepackage[version=4]{mhchem}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\setlength\LTleft{0pt} 
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+% Fixes Table of Contents to not have text running into each other
+\renewcommand*\cftsecnumwidth{2.5em}
+\renewcommand*\cftsubsecnumwidth{3em}
+\renewcommand*\cftsubsubsecnumwidth{4em}
+% - - - - -
+
+\renewcommand{\contentsname}{Table of Contents}
+
+\captionsetup{font=bf}
+\hypersetup{
+     colorlinks = true,
+     linkcolor = cobalt,
+     anchorcolor = blue,
+     citecolor = blue,
+     filecolor = blue,
+     urlcolor = blue
+     }
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+
+% Define Aspect Ratio symbol as \AR
+\def\AR{\clipbox{0pt 0pt .32em 0pt}\AE\kern-.30emR}
+
+
+
+% Can add packages:
+% \usepackage{amsmath,amssymb,amsthm,array}
+% \usepackage[bottom]{footmisc}
+% \usepackage{caption,color}
+% \usepackage{enumitem}
+% \usepackage{lastpage}
+% \usepackage{newtxtext,newtxmath}
+% \usepackage{rotating}
+
+
+% \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}
+% \rhead{\thepage}
+
+% % \setlength{\headheight}{0.5in}
+% % \setlength\parindent{0.5in}
+
+
+
+
+% % \usepackage{fullpage}
+% % \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+% % \usepackage{lastpage}
+% % \usepackage{enumerate}
+% % \usepackage{mathrsfs}
+% % \usepackage{setspace}
+% % \usepackage{listings}
+% % \usepackage{enumitem}
+% % \usepackage{float}
+% % \usepackage{fancyvrb}
+% % \usepackage{booktabs}
+% % \usepackage[numbered,framed]{matlab-prettifier}
+% % \hypersetup{%
+% %   colorlinks=true,
+% %   citecolor=mygreen,
+% %   linkcolor=blue,
+% %   linkbordercolor={0 0 1}
+% % }
+% % \newcommand\tab[1][0.5in]{\hspace*{#1}}
+
+% % \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+% % \definecolor{mylilas}{RGB}{170,55,241}
+% % \definecolor{red}{RGB}{255,0,0}
+
+% % \let\ph\mlplaceholder % shorter macro
+% % \lstMakeShortInline"
+
+
+% % \lstset{language=Matlab,%
+% %     %basicstyle=\color{red},
+% %     breaklines=true,%
+% %     morekeywords={matlab2tikz},
+% %     keywordstyle=\color{blue},%
+% %     morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+% %     identifierstyle=\color{black},%
+% %     stringstyle=\color{mylilas},
+% %     commentstyle=\color{mygreen},%
+% %     showstringspaces=false,%without this there will be a symbol in the places where there is a space
+% %     numbers=left,%
+% %     numberstyle={\tiny \color{black}},% size of the numbers
+% %     numbersep=9pt, % this defines how far the numbers are from the text
+% %     emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+% %     %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+% % }
+% % % \lstset{
+% % %   style              = Matlab-editor,
+% % %   basicstyle         = \mlttfamily \small,
+% % %   escapechar         = ",
+% % %   mlshowsectionrules = true,
+% % %   xleftmargin=.01\textwidth, xrightmargin=.01\textwidth
+% % % }
+
+% % \graphicspath{{./problem1_images}}
+
+% % \pagestyle{fancyplain}
+% % \headheight 35pt
+% % \lhead{\userID}
+% % \chead{\textbf{\Large Homework \hwnumber}}
+% % \rhead{\course \\ \today}
+% % \lfoot{}
+% % \cfoot{}
+% % \rfoot{\small\thepage}
+% % \headsep 1.5em

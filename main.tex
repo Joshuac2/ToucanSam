@@ -1,0 +1,161 @@
+\documentclass[conf]{new-aiaa}
+%\documentclass[journal]{new-aiaa} for journal papers
+\usepackage{preamble}
+
+\begin{document}
+
+\input{Sections/titlepage}
+
+\newpage
+
+\pagenumbering{roman}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{Photos/signatures.JPG}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{center}
+\large{ \textbf{Team Toucan}}
+\end{center}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\linewidth]{Photos/Toucan Headshots.png}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+% \section*{Group Member Assignment Sheet (JJ)}
+% \begin{center}
+%     \begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{1.5cm}|p{3cm}| }\toprule
+%         %  \multicolumn{5}{c}{Team Roster} \\\midrule
+%          \textbf{Name} & \textbf{Primary Role(s)} & \textbf{Secondary Role(s)} & \textbf{AIAA ID} & \textbf{Signature} \\\hline \hline
+%          Chris Endres & Mass Properties; \newline Structures & Landing Gear & 1082820 & \\
+%          Jack Johnson & Team Lead & Avionics & 761905 & \\ 
+%          Joshua Clements & Aerodynamics; \newline Stability \& Control & Interior Design & 761967 & \\ 
+%          Kacper Piechnik & Systems & Acoustics & 1108702 & \\ 
+%          Mateusz Korzen & Loads \& Dynamics; \newline Performance & Configuration & 981691 & \\ 
+%          Nicole Zaworski & Propulsion & Certification; Cost & 1108732 & \\\bottomrule 
+%     \end{tabular}
+% \end{center}
+
+\newpage
+\tableofcontents
+\renewcommand{\thesection}{\arabic{section}}
+
+\section{List of Figures}
+\makeatletter
+\@starttoc{lof}% Print List of Figures
+\makeatother
+
+\section{List of Tables}
+\makeatletter
+\@starttoc{lot}% Print List of Tables
+\makeatother
+
+\newpage
+
+
+\section{Nomenclature}
+\input{Sections/Nomenclature}
+
+\newpage
+\doublespacing
+
+
+\section{Executive Summary (\textit{JJ})}
+\label{section: Exec Summary}
+\input{Sections/ExecutiveSummary}
+
+\clearpage
+\setcounter{section}{0}
+\renewcommand{\thesection}{\Roman{section}}
+\pagenumbering{arabic} % MODIFYING PAGINATION FROM ROMAN TO ARABIC
+
+\section{Introduction (\textit{JJ})}
+\label{section: Intro}
+\input{Sections/Introduction}
+
+% \clearpage
+\section{Concept of Operations}
+\label{section: Conops}
+\input{Sections/Conops}
+
+\clearpage
+\section{Sizing Analysis (\textit{KP})}
+\label{section: Sizing Analysis}
+\input{Sections/SizingAnalysis}
+
+% \clearpage
+\section{Configuration (\textit{MK})}
+\label{section: Configuration}
+\input{Sections/Configuration}
+
+\clearpage
+\section{Propulsion (\textit{NZ})}
+\label{section: Propulsion}
+\input{Sections/Propulsion}
+
+\clearpage
+\section{Aerodynamics (\textit{JC})}
+\label{section: Aerodynamics}
+\input{Sections/Aero}
+
+\clearpage
+\section{Performance (\textit{MK})}
+\label{section: Performance}
+\input{Sections/Performance}
+
+\clearpage
+\section{Stability and Control (\textit{JC})}
+\label{section: Stab and Control}
+\input{Sections/StabMeNow}
+
+\clearpage
+\section{Structures and Loads}
+\label{section: Structures and Loads}
+\input{Sections/StructuresAndLoads}
+
+\clearpage
+\section{Mass Properties (\textit{CE})}
+\label{section: Mass Properties}
+\input{Sections/MassProps}
+
+%\clearpage
+%\section{Landing Gear (\textit{CE, JJ})}
+%\label{section: Landing Gear}
+%\input{Sections/LandingGear}
+
+\clearpage
+\section{Auxiliary Systems (\textit{KP})}
+\label{section: Systems}
+\input{Sections/Systems}
+
+\clearpage
+\section{Cost Analysis (\textit{NZ})}    
+\label{section: Cost}
+\input{Sections/Cost}
+
+\clearpage
+\section{Acoustics (\textit{KP})}    
+\label{section: Acoustics}
+\input{Sections/Acoustics}
+
+
+\clearpage
+\section{Conclusion (\textit{JJ})}
+\label{section: Conclusion}
+\input{Sections/Conclusion}
+
+% \section{Appendix}
+% Delete if not used
+
+\label{section: Requirements}
+\input{Sections/Requirements}
+
+\newpage
+\bibliography{references.bib}
+
+\end{document}

@@ -1,0 +1,44 @@
+\subsection{Design Requirements (\textit{JJ})}
+The design requirements followed in this report are given by AIAA RFP \cite{RFP}, which are outlined in Table \ref{uno}.  Unlike many modern aircraft capable of seating 400+ passengers, the Toucan SAM Mk I has a maximum range of 3,500 NM, less than half of a Boeing 777-200, the seed aircraft looked to for comparison throughout the completion of this project \ref{section: Sizing Analysis}.  This is the most significant required design factor to consider while engineering this aircraft, as simply scaling or otherwise adapting a proven design already in service is not realistic.  Furthermore, a design mission of 700 NM is referenced in the RFP \cite{RFP}, significantly altering the cruise portion of a design mission for most aircraft of this class and capacity.  
+
+\begin{table}[h!] 
+    \centering
+    \caption{RFP Requirements}
+    \begin{tabular}{ |c||c| }\toprule
+    \textbf{Category} & \textbf{Requirement} \\\hline\hline
+    Capacity & 410 (10 crew, 400 passengers) \\\hline
+    Payload & 94,000 lb (200lb per person, 30lb per occupant) \\\hline
+    Range & 3,500 NM \\\hline
+    Takeoff Field Length & 9,000 ft with a 35 ft obstacle \\\hline
+    Landing Field Length & 9,000 ft \\\hline
+    Approach Speed & 145 kts at end of design mission\\\hline
+    Pressure & 8,000 ft pressure altitude at maximum flight altitude \\\hline
+    Certification & Flying qualities should meet FAA 14 CFR Part 25.\\\hline 
+
+    \end{tabular}\label{uno}
+\end{table}
+
+One self-imposed, yet extremely significant requirement Team Toucan placed on this aircraft is a fully composite wing and wing structure. While certainly not required, nor chosen out of necessity, this adaptation is driven by the desire to deliver maximum customer value over the decades of service seen by commercial aircraft.  Furthermore, it helps mitigate operations costs in the future, as fuel prices and their associated taxes continue to show a tendency to rise, especially in maturing markets.  Further quantitative discussion of the decision to utilize a hybrid design can be found in Section \ref{section: Structures and Loads}.
+\clearpage
+\subsection{Mission Profile (\textit{MK})}
+The mission profile of the SAM Mk I consists of six distinct subsections in the design mission and five separate reserve sections. The design mission consists of a Warm-up, Taxi, and Takeoff (WUTTO) segment, a climb segment to a starting cruise altitude of 37,000 ft, a cruise/step climb segment, a descend segment, a loiter for five minutes at 5,000 ft segment, and a landing attempt.  Furthermore, built into the SAM Mk. 1 are enough reserves to carry out an additional five mission segments, per RFP requirements \cite{RFP}. These segments are a diversion to an alternate airport 200 NM away, which the SAM Mk I will climb to an altitude of 30,000 ft for, a loiter for 30 minutes, descend, loiter for another five minutes at 5,000 ft, and finally approach, land, and taxi (ALT). During cruise, SAM Mk. 1 will start at a cruise altitude of 37,000 ft, where it will step climb in two intervals of 2,000 ft to 39,000 ft and 41,000 ft, respectively. This profile is illustrated below in Figure \ref{fig:missionprof}. Further discussion of each segment, in particular the fuel used in each mission segment, will be discussed in the Performance Section. 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=1.1\textwidth]{Photos/Mission_Profile_(4-14-20).pdf}
+    \caption{SAM Mk. 1 - Mission Profile (Including Reserves)}
+    \label{fig:missionprof}
+ \end{figure}
+
+%\textcolor{red}{
+%\begin{itemize}
+    %\item AIAA: A description of the design missions defined for the proposed concepts for use in
+%calculations of mission performance as per design objectives. This includes the
+%selection of cruise altitude(s) and cruise speed/cruise Mach supported by pertinent
+%trade analyses and discussion.
+    %\item Discuss requirements (including those from the RFP and any additional derived requirements), constraints, and the design mission. \checkmark JJ
+    %\begin{itemize}
+        %\item Include a table of requirements.\checkmark JJ
+        %\item \hl{Include a figure of the design mission with key mission segments labeled and details noted (e.g. cruise range and altitude).}
+    %\end{itemize}
+%\end{itemize}}

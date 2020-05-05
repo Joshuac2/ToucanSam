@@ -1,0 +1,107 @@
+\subsection{Production Cost Estimation}
+
+The cost estimate for the SAM Mk I was done using a Development and Procurement Cost of Aircraft (DAPCA) IV Cost Model which estimated various production costs for the year 2012. These values were then subjected to inflation rates in order to gain correct estimation values for the year 2020. The DAPCA IV equations were based off a presentation made by Dr. Serkan Özgen of Middle East Technical University \cite{dapca}. The majority of the equations were based off of three dependent variables, the speed of the aircraft at cruise, the empty weight of the aircraft, and the number of units. From these three variables, it is possible to estimate the majority of the cost of an aircraft developmental program, which will be detailed in a table below.
+
+The estimated cost of the aircraft had several uncertainties which had to be factored in and estimated, therefore it is most likely the case that the price of this aircraft is much lower than indicated. The DAPCA IV Model that was used assumes a standard material of aluminum for manufacturing, which is incorrect for the SAM Mk I material build-up. While the fuselage is metallic, the wings and stabilizers will be made of composite material, making up an estimated 43\% of the wetted area of the aircraft. According to a paper by Clifford Lester and Dr. Steven Nutt, the cost of a carbon fiber composite compared to aluminum for material and manufacturing costs is 5x \cite{compositecost}. Therefore, the manufacturing, tooling, engineering, quality, and manufacturing material cost was multiplied by a factor of 2.15 in order to account for the hybrid material design of the aircraft. The results of the DAPCA IV model are summarized in Table \ref{tab:prodcost}.
+
+\begin{table}[!h]
+    \centering
+        \caption{Aircraft Cost Estimates For Varying Unit Rates}
+    \begin{tabular}{|c||c|c|c|}\toprule
+         & \textbf{500} & \textbf{1000} & \textbf{2000} \\\hline \hline
+         \textbf{Engineering Cost} & \$ 15,201,193,000 & \$ 17,019,451,000 & \$ 19,055,197,000 \\ \hline
+         \textbf{Tooling Cost} & \$ 9,942,369,000 & \$ 11,930,559,000 & \$ 14,316,329,000 \\ \hline
+         \textbf{Manufacturing Cost} & \$ 50,185,687,000 & \$ 78,260,047,000 & \$ 122,039,476,000 \\ \hline
+         \textbf{Quality Cost} &  \$ 13,021,838,000  & \$ 20,306,380,000 & \$ 31,665,967,000 \\ \hline
+         \textbf{Development Support Cost} & \$  971,889,000  & \$ 971,889,000 & \$ 971,889,000  \\ \hline
+         \textbf{Flight Test Cost} &  \$ 23,907,000 & \$ 23,907,000 & \$ 23,907,000 \\ \hline
+         \textbf{Manufacturing Materials Cost} &  \$   30,784,168,000    &  \$   53,561,211,000  &  \$   93,190,869,000 \\ \hline
+         \textbf{Investment Cost} & \$  149,076,820,000  & \$  226,504,812,000  & \$  350,492,548,000  \\ \hline
+         \textbf{Flyaway Cost} &  \$  119,261,456,000  &  \$  181,203,850,000  &  \$  280,394,038,000  \\ \hline
+         \textbf{Avionics Cost} &  \$ 5,620,000 & \$ 5,620,000 & \$ 5,620,000  \\ \hline
+         \textbf{RDT\&E \& Production Cost} &  \$  120,199,773,000  &  \$  182,142,167,000  &  \$  281,332,355,000   \\ \hline
+         \textbf{Base Cost per Unit} &  \$  240,399,000  &  \$  182,142,000  &  \$  140,666,000  \\ \hline
+         \textbf{15\% Markup Cost per Unit} &  \$  276,459,000 &  \$  209,463,000  &  \$  161,766,000 \\\bottomrule
+    \end{tabular}
+    \label{tab:prodcost}
+\end{table}
+
+Flight test cost was dependent on the number of flight test articles produced, which was estimated at 10. The avionics cost was estimated as \$6,000 per pound of avionics, with the mass of the avionic system being defined by Raymer \cite{raymer} in Section \ref{section: Mass Properties}. Everything else was purely dependent on the three variables mentioned earlier. The table shows that as the number of units is produced, the base cost of each unit decreases significantly. 
+
+After completing an analysis of other aircraft manufacturers, it was noted that Boeing currently produces approximately 22.5 aircraft each month as of March 2020 \cite{boeingproduction}. This is across multiple aircraft variants, therefore an assumption was made that if all resources were used towards one variant, the production rate would increase as the work force and resources would become more streamlined and specialized with only one variant to focus on. It was estimated that this would allow the SAM Mk I to be produced at a rate of 25 aircraft per month, which would lead to a production run of just under 7 years, not including research and development.
+
+
+\subsection{Operating Cost Estimation}
+
+According to Raymer, a civil transport aircraft flies about 2,500 - 4,500 flight hours per year \cite{raymer}. Due to the shorter mission profile required of the SAM Mk I, it was decided that 3,000 flight hours seemed to be a reasonable expectation of usage. From this assumption, all operating costs were estimated and then average per flight hour and per year. This can be seen in Table \ref{tab:opcost}.
+
+\begin{table}[!h]
+    \centering
+        \caption{Estimated Aircraft Operating Cost}
+    \begin{tabular}{|c||c|c|c|}\toprule
+         & \textbf{Per 700 NM Mission} & \textbf{Per Flight Hour} & \textbf{Per Year} \\\hline \hline
+         \textbf{Fuel Cost} & \$ 26,790 & \$ 24,110 & \$ 72,333,000 \\ \hline
+         \textbf{Insurance Cost} & \$ 412 & \$ 371 & \$ 1,112,815 \\ \hline
+         \textbf{Crew Cost} &  \$ 2,060  & \$ 1,854 & \$ 5,564,076 \\ \hline
+         \textbf{Maintenance Cost} & \$ 8,243 & \$ 7,418 & \$ 22,256,037  \\ \hline
+         \textbf{Depreciation Cost} & \$ 4,121 & \$ 3,709 & \$ 11,128,150  \\ \hline
+         \textbf{Total Operating Cost} &  \$ 41,627 &  \$ 37,464 &  \$ 112,394,000 \\\bottomrule
+    \end{tabular}
+    \label{tab:opcost}
+\end{table}
+
+For the operational costs, it is estimated that the flight time of a 700 NM mission is approximately 1.1 hours, not including passenger loading, loitering, and passenger disembarking. From there, the fuel used was estimated and subjected to a price of \$6 per gallon as required by the RFP \cite{RFP}. According to Raymer, the oil price for an aircraft is insignificant when comparing to the fuel cost and can be ignored \cite{raymer}. Crew salary was estimated by using average salaries for flight attendants and pilots, averaging the yearly salary to a per hour basis, and then multiplying by the flight hours and number of employees needed \cite{pilotsalary} \cite{flightsalary}. While the flight crew number only 10 per flight, due to labor laws and regulations, a much larger crew will be needed per aircraft in order to ensure no employee is working over their allowed hours. 
+
+In order to create profit per flight, there are several cost models that airlines can follow in order to make a profit off of the operating cost which can be seen below in Table \ref{tab:tickets}.
+
+\begin{table}[!h]
+    \centering
+        \caption{Estimated Ticket Price Per 700 nmi Mission}
+    \begin{tabular}{|c||c|c|c|}\toprule
+         & \textbf{Option 1} & \textbf{Option 2} & \textbf{Option 3} \\\hline \hline
+         \textbf{Economy Ticket Price} & \$ 100 & \$ 150 & \$ 125 \\ \hline
+         \textbf{Business Ticket Price} & \$ 200 & \$ 300 & \$ 187  \\ \hline
+         \textbf{Total Ticket Revenue} & \$ 45,000 & \$ 67,500 & \$ 53,125 \\ \hline
+         \textbf{Economy Cost per Flight Mile} &  \$ 0.214 &  \$ 0.178 &  \$ 0.321 \\ \hline
+         \textbf{Business Cost per Flight Mile} &  \$ 0.428 &  \$ 0.267 &  \$ 0.642 \\\bottomrule
+    \end{tabular}
+    \label{tab:tickets}
+\end{table}
+
+The primary differences in the ticket cost is whether or not the business tickets are twice expensive as the economy tickets or if they are only 1.5 times as expensive. These ticket costs are not completely accurate since many airlines sell tickets according to a fare class which oscillates the price of each ticket depending on a variety of factors such as number of tickets bought, how many seats are left open, if the customer is buying round trip tickets or one way, and how close the date of purchase is to the date of departure. Additionally, extra costs such as checked bagged fees, priority boarding, seat choice, and extra beverages and food on the flight will also help offset costs. These strategies help ensure that the airline is always making a profit.
+
+\subsection{Cost Savings}
+
+There are several ways in which the cost of the SAM Mk I system could be decreased, both from a technical and a business standpoint. From a technical standpoint, the most straightforward way to decrease production cost of the aircraft would be to switch to an all metal body rather than having a metal fuselage and composite wings. Composite materials have a much higher manufacturing, material, and engineering cost due to the difficulty in manufacturing, high equipment cost, and specialized techniques needed \cite{compositecost}. However, the weight benefits from using a hybrid design are significant since carbon fiber has a significant strength-to-weight advantage. A weight decrease leads to decreases in the fuel cost, as well as a much lower lift requirement for aerodynamics. Additionally, choosing less advanced avionic systems that still meet minimum requirements would greatly decrease the base avionics cost and decrease the total empty weight of the aircraft as well. Lastly, engine de-rating would increase engine lifespan offering cost savings in terms of engine replacement and maintenance. Since the engines on the SAM Mk I are overpowered, this will especially apply to this aircraft, allowing the GE90-115B engines to decrease their average maintenance cycles while still offering safety and reliability to the aircraft.
+
+From a business perspective, ensuring that production occurs in a tax attractive state is particularly beneficial to save on costs. Many states will waive taxes, or help subsidize the preliminary cost of building manufacturing facilities in order to make them more attractive to large corporations which would bring jobs to the area. Locating such a state could save millions in preliminary costs, and have extremely beneficial cost savings in the long run. Outsourcing manufacturing labor to suppliers can also decrease cost as suppliers may already have the necessary tools, manufacturing equipment, and labor force in order to produce various items.
+
+
+%Finally, ensuring fair treatment of workers would greatly decrease the chances of workers unionizing. While there is considerable debate on the benefits and disadvantages of labor unions, it cannot be denied that labor unions are a cost disadvantage for a company and should be avoided for the best interest in a cost standpoint. 
+
+
+
+% https://www.law.cornell.edu/cfr/text/40/86.1816-08
+% https://www.law.cornell.edu/cfr/text/14/appendix-Special_Federal_Aviation_Regulation_No_13
+% https://www.geaviation.com/press-release/ge90-engine-family/ge90-115b-ges-best-ever-new-jet-engine-entry-airline-service
+
+% \textcolor{red}{\begin{itemize}
+%     \item include estimations for various production runs over a reasonable time period(s).
+%     \item Direct Operating costs Include cost per flight hour, estimated for various operator flight hours/month.
+%     \item Include cost per year, estimated for various for operator flight hours/month.
+%     \subitem 500, 1000, and 2000 units
+%     \item Discuss model uncertainties and inaccuracies.
+%     \item Discuss 3 ways of cost saving.
+%     \item Discuss future work
+%     \item AIAA: A lifecycle Carbon Dioxide (CO2) emission estimate. This estimate should include CO2 emissions from manufacturing the aircraft as well as CO2 emissions while in service. (could also go w prop)
+%     \item AIAA: Summary of cost estimate and a business case analysis. This assessment should identify the cost groups and drivers, assumptions, and design choices aimed at the minimization of production costs
+%         \subitem Estimate the non-recurring development costs of the airplane including engineering, FAA/EASA certification, production tooling, facilities and labor
+%         \subitem Estimate the fly away cost of each member of the family
+%         \subitem Estimate the price that would have to be sold for to generate at least a 15 percent profit
+%         \subitem Show how the airplane could be produced profitably at production rates ranging from 10-20 airplanes per month or another production rate that is supported by a brief market analysis
+%     \item Estimate of direct operating cost on the 700 nmi reference mission:
+%         \subitem Fuel, oil, tires, brakes, and other consumable quantities
+%         \subitem Estimate of maintenance cost per flight
+%         \subitem Flight and cabin crew costs per flight
+%         \subitem Including other costs will strengthen the proposal!
+% \end{itemize}}
